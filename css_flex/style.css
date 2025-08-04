@@ -1,4 +1,3 @@
-
 /*
 container é a tag pai
 flex-direction = sentido do flex
@@ -14,8 +13,8 @@ column-gap
 NOS ELEMENTOS FILHO
 order = 0 -> padrão Ordena os blocos. Os números podem ser negativos
 flew-grow = pode ou não crescer. Cresce em proporção.
-flex-shrink = pode ou não encolher. 
-flex-basis = define largura 
+flex-shrink = pode ou não encolher.
+flex-basis = define largura
 flex = agrega grow/shrink/basis
 align-self = alinha um único elemento
 
@@ -25,34 +24,62 @@ https://mastery.games/flexboxzombies/...
 https://www.flexboxdefense.com
 
 */
+body{
+    background-color:rgb(55, 100, 90) ;
+}
+:root{
+    --tamanho: 30px;
+    --altura: 15px;
+    --titulo_principal: 40px;
+    --titulo_secundario:30px;
+    --texto: 20px;
+    --text_secundario: 15px;
+    --preenchimento: 10px;
+    --corUm: #00f853;
+    --corDois: #00FF00;
+    --corTrês: #b20ed3;
+    --corQuatro: #e08011;
+    --corCinco: #eeff00;
+    --corSeis: #800080;
+    --corSete: #FFC0CB;
+    --corOito: #ff0062;
+    --corNove: #FF00FF;
+    --corDez: #240086;
+    --corOnze: #ffffff;
+    --corDoze: #000000;
+    --cortreze: #d47c7c;
+    --corQuatorze: #ff0000;
+    --corQuinze: #1b816b;
+
+}
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: center;
     row-gap: 10px;
     column-gap: 30px;
+    color: white;
 
     /* INDIFERENTE */
-    background-color: rgb(255, 231, 201);
+    background-color: antiquewhite;
     padding: 16px;
-    height: 500px;
+    height: 700px;
 }
 
 .bloco-1 {
-    background-color:rgb(12, 205, 219);
+    background-color: var(--corUm);
     padding: 15px;
     width: 50px;
     flex-grow: 0;
     flex-shrink: 1;
-    align-self:right ;
-    
+    align-self: right;
 }
 
 .bloco-2 {
-    background-color: rgb(255, 214, 127);
+    background-color: var(--corDois);
     padding: 15px;
     width: 50px;
     flex-grow: 0;
@@ -60,7 +87,7 @@ https://www.flexboxdefense.com
 }
 
 .bloco-3 {
-    background-color: rgb(197, 127, 255);
+    background-color: var(--corTrês);
     padding: 15px;
     width: 50px;
     flex-grow: 0;
@@ -68,73 +95,75 @@ https://www.flexboxdefense.com
 }
 
 .bloco-4 {
-    background-color: rgb(127, 146, 255);
+    background-color: var(--corQuatro);
     padding: 15px;
     width: 50px;
+    color: #f00;;
 }
 
 .bloco-5 {
-    background-color: rgb(129, 127, 255);
+    background-color: var(--corCinco);
     padding: 15px;
     width: 50px;
 }
 
 .bloco-6 {
-    background-color: rgb(255, 157, 127);
+    background-color: var(--corSeis);
     padding: 15px;
     width: 50px;
 }
 
 .bloco-7 {
-    background-color: rgb(240, 28, 28);
+    background-color: var(--corSete);
     padding: 15px;
     width: 50px;
 }
 
 .bloco-8 {
-    background-color: rgb(169, 74, 247);
+    background-color: var(--corOito);
     padding: 15px;
     width: 50px;
 }
 
 .bloco-9 {
-    background-color: rgb(245, 44, 77);
+    background-color: var(--corNove);
     padding: 15px;
     width: 50px;
 }
 
 .bloco-10 {
-    background-color: rgb(85, 233, 93);
+    background-color: var(--corDez);
     padding: 15px;
     width: 50px;
 }
 
 .bloco-11 {
-    background-color: rgb(176, 245, 15);
+    background-color: var(--corOnze);
     padding: 15px;
     width: 50px;
 }
 
 .bloco-12 {
-    background-color: rgb(166, 230, 183);
+    background-color: var(--corDoze);
     padding: 15px;
     width: 50px;
 }
 
 .bloco-13 {
-    background-color: rgb(228, 68, 156);
+    background-color: var(--corTreze);
     padding: 15px;
     width: 50px;
+    color: #000000
 }
 
 .bloco-14 {
-    background-color: rgb(29, 202, 13);
+    background-color: var(--corQuatorze);
     padding: 15px;
     width: 50px;
 }
 
 .bloco-15 {
-    background-color: rgb(212, 192, 233);
+    background-color: var(--corQuinze);
     padding: 15px;
     width: 50px;
 }
